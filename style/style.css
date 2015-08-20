@@ -49,7 +49,61 @@ table {
 
 /* Type Styles */
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
+body{
+  font-family: 'Karla', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header{
+  background-color: #f7f7f7;
+  height: 540px;
+}
+
+nav{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.logo{
+  background: url("../img/am-logo.svg") no-repeat center center;
+  width: 60px;
+  height: 60px;
+}
+
+.intro-text{
+font-size: 24px;
+color: #7E7E7E;
+line-height: 32px;
+margin: 100px auto 0 auto;
+float: left;
+max-width: 1170px;
+}
+
+.logo{
+  float: left;
+}
+
+.menu-right ul li{
+  display: inline;
+  font-size: 1em;
+  margin-left: 60px;
+  float: right;
+  color: #979797;
+}
+
+.menu-right ul li a:hover{
+  border-bottom: 1px solid #4E4E4E;
+  color: #4E4E4E;
+}
 
 
 
