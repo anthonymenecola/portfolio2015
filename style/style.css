@@ -67,25 +67,44 @@ header{
   height: 540px;
 }
 
+header section{
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
 nav{
   max-width: 1170px;
   margin: 0 auto;
   padding-top: 60px;
+  overflow: hidden;
 }
 
 .logo{
   background: url("../img/am-logo.svg") no-repeat center center;
-  width: 60px;
-  height: 60px;
+  width: 37px;
+  height: 32px;
+  overflow: hidden;
+  opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+   -moz-transition: opacity 0.3s ease-in-out;
+   -webkit-transition: opacity 0.3s ease-in-out;
+   -o-transition:opacity 0.3s ease-in-out;
+}
+
+.logo:hover{
+  opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+   -moz-transition: opacity 0.3s ease-in-out;
+   -webkit-transition: opacity 0.3s ease-in-out;
+   -o-transition:opacity 0.3s ease-in-out;
 }
 
 .intro-text{
 font-size: 24px;
 color: #7E7E7E;
 line-height: 32px;
-margin: 100px auto 0 auto;
+margin: 160px auto 0 auto;
 float: left;
-max-width: 1170px;
 }
 
 .logo{
@@ -106,9 +125,28 @@ max-width: 1170px;
 }
 
 
+::-webkit-selection { 
+background : #044AD7; 
+color: #ffffff; 
+text-shadow : none; }
+
+::-moz-selection { 
+background : #044AD7; 
+color: #ffffff; 
+text-shadow : none; }
+
+::selection { 
+background: #044AD7; 
+color: #ffffff; 
+text-shadow : none; }
+
+
 
 /* Mobile Styling */
 
+@media (min-width: 640px){
+
+}
 
 
 
