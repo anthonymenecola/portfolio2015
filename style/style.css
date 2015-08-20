@@ -88,7 +88,7 @@ nav{
     transition: opacity 0.3s ease-in-out;
    -moz-transition: opacity 0.3s ease-in-out;
    -webkit-transition: opacity 0.3s ease-in-out;
-   -o-transition:opacity 0.3s ease-in-out;
+   -o-transition: opacity 0.3s ease-in-out;
 }
 
 .logo:hover{
@@ -96,7 +96,7 @@ nav{
     transition: opacity 0.3s ease-in-out;
    -moz-transition: opacity 0.3s ease-in-out;
    -webkit-transition: opacity 0.3s ease-in-out;
-   -o-transition:opacity 0.3s ease-in-out;
+   -o-transition: opacity 0.3s ease-in-out;
 }
 
 .intro-text{
@@ -119,9 +119,22 @@ float: left;
   color: #979797;
 }
 
+.menu-right ul li a{
+  color: #979797;
+  border-bottom: 1px solid #f7f7f7;
+  transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -webkit-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+}
+
 .menu-right ul li a:hover{
-  border-bottom: 1px solid #4E4E4E;
   color: #4E4E4E;
+  border-bottom: 1px solid #4E4E4E;
+    transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
 }
 
 
