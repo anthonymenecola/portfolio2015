@@ -63,7 +63,7 @@ body{
 }
 
 header{
-  background-color: #f7f7f7;
+  background-color: #F2F2F2;
   height: 540px;
 }
 
@@ -111,30 +111,50 @@ float: left;
   float: left;
 }
 
-.menu-right ul li{
-  display: inline;
+.menu-right li{
   font-size: 1em;
   margin-left: 60px;
   float: right;
   color: #979797;
 }
 
-.menu-right ul li a{
+.menu-right li a{
   color: #979797;
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 1px solid #F2F2F2;
+  padding-bottom: 8px;
   transition: all 0.3s ease-in-out;
  -moz-transition: all 0.3s ease-in-out;
  -webkit-transition: all 0.3s ease-in-out;
  -o-transition: all 0.3s ease-in-out;
 }
 
-.menu-right ul li a:hover{
+.menu-right li a:hover{
   color: #4E4E4E;
-  border-bottom: 1px solid #4E4E4E;
+  border-bottom: 1px solid #044AD7;
+  padding-bottom: 2px;
     transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -webkit-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
+}
+
+main{
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+@font-face{
+font-family: "adobe-garamond-pro",sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+
+.title-heading{
+  font-family: "adobe-garamond-pro", Georgia, Times, serif;
+  font-size: 36px;
+  color: #044AD7;
+  line-height: 43px;
 }
 
 
