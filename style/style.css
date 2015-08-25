@@ -85,7 +85,15 @@ nav{
   margin: 0 auto;
   padding-top: 60px;
   overflow: hidden;
+/*  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;*/
 }
+
+/*.nav{
+  height: 100px;
+}*/
 
 .logo{
   background: url("../img/am-logo.svg") no-repeat center center;
@@ -201,7 +209,7 @@ footer{
   line-height: 2em;
   color: #505050;
   background-color: #1A1A1A;
-  height: 250px;
+  min-height: 180px;
   width: 100%;
   padding: 60px;
   overflow: hidden;
@@ -293,11 +301,6 @@ section .social ul{
   height: 20px;
 }
 
-
-
-
-
-
 ::-webkit-selection { 
 background : #044AD7; 
 color: #ffffff; 
@@ -317,8 +320,39 @@ text-shadow : none; }
 
 /* Mobile Styling */
 
-@media (min-width: 640px){
+@media (max-width: 800px){
+  section .col-1{
+  float: left;
+  width: 80%;
+}
 
+section .col-2{
+  float: left;
+  width: 80%;
+  padding: 0;
+  clear: left;
+}
+
+section .social{
+  float: left;
+  clear: left;
+  width: 80%;
+  margin-top: 30px;
+}
+
+section .social ul{
+  float: left;
+}
+
+.social li{
+  padding-right: 18px;
+  display: inline;
+  opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+}
 }
 
 
