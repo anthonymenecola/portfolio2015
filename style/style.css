@@ -70,6 +70,25 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2{
+  font-family: "adobe-garamond-pro", Georgia, Times, serif;
+  font-size: 36px;
+  color: #044AD7;
+  position: relative;
+}
+
+h2::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  height: 2px;
+  width: 30px;
+  background-color: currentColor;
+}
+
+/* structure */
+
 header{
   background-color: #F2F2F2;
   height: 540px;
@@ -156,51 +175,47 @@ float: left;
 
 main{
   max-width: 1170px;
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 60px auto;
+}
+
+.select-works{
+  background: transparent;
+  width: 48%;
+  height: 20em;
+  float: left;
+  margin-bottom: 60px;
+  margin: 10px;
+}
+
+.project{
+  width: 48%;
+  height: 20em;
+  float: left;
+  margin-bottom: 60px;
+  padding: 20px;
+  margin: 10px;
 }
 
 .pur{
-  background: #363636;
-  width: 60%;
-  height: 440px;
-  float: right;
-  margin-bottom: 60px;
+  background: white url("../img/peppermint.jpg") no-repeat center center;
 }
 
 .cambie{
-  background: blue;
-  width: 48%;
-  height: 30em;
-  float: left;
-  margin-bottom: 60px;
-  clear: both;
-  padding: 20px;
-  margin: 10px;
+  background: white url("../img/cambie-thumb.jpg") no-repeat center center;
 }
 
-.babes{
-  background: green;
-  width: 48%;
-  height: 30em;
-  float: left;
-  margin-bottom: 60px;
-  padding: 20px;
-  margin: 10px;
+.montauk{
+  background: white url("../img/montauk-Logo.jpg") no-repeat center center;
+}
+
+.placeholder{
+  background: white url("../img/5.jpg") no-repeat center center;
 }
 
 @font-face{
 font-family: "adobe-garamond-pro",sans-serif;
 font-style: normal;
 font-weight: 400;
-}
-
-.title-heading{
-  font-family: "adobe-garamond-pro", Georgia, Times, serif;
-  font-size: 36px;
-  color: #044AD7;
-  line-height: 43px;
-  float: left;
 }
 
 footer{
@@ -236,6 +251,7 @@ footer a:hover{
 
 footer section{
   margin: 0 auto;
+  padding: 0 10px;
   max-width: 1170px;
 }
 
