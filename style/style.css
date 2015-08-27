@@ -204,6 +204,7 @@ section.wrapper{
 
 .pur{
   background: white url("../img/peppermint.jpg") no-repeat center center;
+  background-size: 100%;
 }
 
 .cambie{
@@ -232,9 +233,8 @@ footer{
   background-color: #1A1A1A;
   min-height: 180px;
   width: 100%;
-  padding: 60px;
+  padding: 60px 0 20px 0;
   overflow: hidden;
-  margin: 60px 0 0 0;
   position: relative;
 }
 
@@ -321,6 +321,15 @@ section .social ul{
   background: url(../img/instagram.svg) no-repeat center center;
   width: 20px;
   height: 20px;
+}
+
+.latlong{
+  font-family: Karla-Regular;
+  font-size: 22px;
+  color: #333333;
+  clear: both;
+  float: right;
+  padding-top: 40px;
 }
 
 ::-webkit-selection { 
