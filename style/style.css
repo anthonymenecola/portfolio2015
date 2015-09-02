@@ -137,10 +137,13 @@ position: relative;
   float: left;
 }
 
+.menu-right{
+  float: right;
+}
+
 .menu-right li{
   font-size: 1em;
   margin-left: 60px;
-  float: right;
   color: #979797;
   display: inline;
 }
@@ -200,23 +203,50 @@ section.wrapper{
   margin-bottom: 60px;
   padding: 20px;
   margin: 10px;
+  position: relative;
+}
+
+.project_name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  font-size: 1.3em;
+  background-color: rgba(4,74,215,.9);
+  color: #ffffff;
+  padding: 40px 0 0 40px;
+    transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+}
+
+.project_name:hover{
+  opacity: 1;
+    transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
 }
 
 .pur{
-  background: white url("../img/peppermint.jpg") no-repeat center center;
+  background: white url("https://images.unsplash.com/photo-1429042595042-d9bb87d4ea82?q=80&fm=jpg&s=11a9eaca10009b29aa1e0d1244fc8a88") no-repeat center center;
   background-size: 100%;
 }
 
 .cambie{
-  background: white url("../img/cambie-thumb.jpg") no-repeat center center;
+  background: white url("https://images.unsplash.com/photo-1429041966141-44d228a42775?q=80&fm=jpg&s=364e3e1c869c2f4b9fbecaae1e0778df") no-repeat center center;
 }
 
 .montauk{
-  background: white url("../img/montauk-Logo.jpg") no-repeat center center;
+  background: white url("https://images.unsplash.com/photo-1437422061949-f6efbde0a471?q=80&fm=jpg&s=e23055c9ba7686b8fe583fb8318a1f88") no-repeat center center;
 }
 
 .placeholder{
-  background: white url("../img/5.jpg") no-repeat center center;
+  background: white url("https://images.unsplash.com/photo-1425315283416-2acc50323ee6?q=80&fm=jpg&s=94c3e17a79354c33dbd59ced862b1460") no-repeat center center;
 }
 
 @font-face{
