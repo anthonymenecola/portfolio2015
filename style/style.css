@@ -82,7 +82,7 @@ h2{
 
 header{
   background-color: #F2F2F2;
-  height: 540px;
+  height: 400px;
 }
 
 header section{
@@ -99,7 +99,7 @@ nav{
 
 .logo{
   background: url("../img/am-logo.svg") no-repeat center center;
-  width: 37px;
+  width: 38px;
   height: 32px;
   overflow: hidden;
   opacity: 1;
@@ -121,16 +121,10 @@ nav{
 font-size: 24px;
 color: #7E7E7E;
 line-height: 32px;
-margin: 160px auto 0 auto;
+margin: 100px auto 0 auto;
 float: left;
 position: relative;
-}
-
-.intro-text:after{
-  content: '\2193';
-  position: absolute;
-  left: 0;
-  bottom: -60px;
+width: 75%;
 }
 
 .logo{
@@ -214,7 +208,7 @@ section.wrapper{
   left: 0;
   width: 100%;
   opacity: 0;
-  font-size: 1.3em;
+  font-size: 1em;
   background-color: rgba(4,74,215,.9);
   color: #ffffff;
   padding: 40px 0 0 40px;
@@ -230,6 +224,11 @@ section.wrapper{
    -moz-transition: all 0.3s ease-in-out;
    -webkit-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
+}
+
+.project_name:after{
+  content: "\2192";
+  margin-left: 10px;
 }
 
 .pur{
