@@ -73,7 +73,7 @@ h2 {
 
 /* structure */
 header {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   height: 400px; }
 
 header section {
@@ -111,7 +111,7 @@ nav {
   margin: 100px auto 0 auto;
   float: left;
   position: relative;
-  width: 75%; }
+  width: 50%; }
 
 .logo {
   float: left; }
@@ -226,7 +226,7 @@ section.wrapper {
   font-weight: 400; }
 .latest {
   width: 100%;
-  background: #f7f7f7;
+  background: #f2f2f2;
   clear: left;
   color: #1959D3;
   padding: 80px 0; }
