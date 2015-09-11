@@ -57,7 +57,7 @@ a {
   color: inherit; }
 
 body {
-  font-family: 'Karla', Helvetica, Arial, sans-serif;
+  font-family: "Karla", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
@@ -65,16 +65,20 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 h2 {
-  font-family: 'Merriweather', Georgia, Times, serif;
-  font-size: 2em;
+  font-family: "adobe-garamond-pro", Times, Georgia, serif;
+  font-size: 1.6em;
   color: #044AD7;
   position: relative;
   font-weight: 400; }
 
+@font-face {
+  font-family: 'adobe-garamond-pro', Times, Georgia, serif;
+  font-style: normal;
+  font-weight: 400; }
 /* structure */
 header {
-  background-color: #f2f2f2;
-  height: 400px; }
+  background-color: #044AD7;
+  height: 600px; }
 
 header section {
   margin: 0 auto;
@@ -106,12 +110,23 @@ nav {
 
 .intro-text {
   font-size: 24px;
-  color: #7E7E7E;
+  color: #ffffff;
   line-height: 32px;
-  margin: 100px auto 0 auto;
+  margin: 200px auto 0 auto;
   float: left;
   position: relative;
   width: 50%; }
+
+.intro-text:after {
+  content: '\2193';
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  opacity: 0.6; }
+
+.intro-text a {
+  border-bottom: 1px solid #50E3C2;
+  padding-bottom: 2px; }
 
 .logo {
   float: left; }
@@ -126,18 +141,20 @@ nav {
   display: inline; }
 
 .menu-right li a {
-  color: #979797;
-  border-bottom: 1px solid #F2F2F2;
+  color: #ffffff;
+  border-bottom: 1px solid transparent;
   padding-bottom: 8px;
+  opacity: 0.6;
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out; }
 
 .menu-right li a:hover {
-  color: #4E4E4E;
-  border-bottom: 1px solid #044AD7;
+  color: #ffffff;
+  border-bottom: 1px solid #50E3C2;
   padding-bottom: 2px;
+  opacity: 1;
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -220,10 +237,6 @@ section.wrapper {
   background: white url("https://images.unsplash.com/photo-1425315283416-2acc50323ee6?q=80&fm=jpg&s=94c3e17a79354c33dbd59ced862b1460") no-repeat center center;
   background-size: 100%; }
 
-@font-face {
-  font-family: "adobe-garamond-pro", Times, Georgia, serif;
-  font-style: normal;
-  font-weight: 400; }
 .latest {
   width: 100%;
   background: #f2f2f2;
@@ -238,7 +251,7 @@ section.wrapper {
 .latest li {
   margin: 0 0 50px 0;
   font-size: 1.5em;
-  font-family: 'Merriweather', Georgia, Times, serif;
+  font-family: "adobe-garamond-pro", Times, Georgia, serif;
   font-size: 2em;
   color: #044AD7;
   font-weight: 400;
@@ -344,7 +357,7 @@ section .social ul {
   height: 20px; }
 
 .latlong {
-  font-family: Karla-Regular;
+  font-family: "Karla", Helvetica, Arial, sans-serif;
   font-size: 22px;
   color: #333333;
   clear: both;

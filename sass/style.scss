@@ -1,5 +1,11 @@
 $blue-1:#044AD7;
 $light-gray:#f2f2f2;
+$dark-gray: #1A1A1A;
+$teal: #50E3C2;
+$font-sans: 'Karla', Helvetica, Arial, sans-serif;
+$font-serif: 'adobe-garamond-pro', Times, Georgia, serif;
+$font-mono: 'PT Mono', 'Andale Mono', Consolas, monospace;
+
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
@@ -67,7 +73,7 @@ a{
 }
 
 body{
-  font-family: 'Karla', Helvetica, Arial, sans-serif;
+  font-family: $font-sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
@@ -76,18 +82,24 @@ body{
 }
 
 h2{
-  font-family: 'Merriweather', Georgia, Times, serif;
-  font-size: 2em;
+  font-family: $font-serif;
+  font-size: 1.6em;
   color: $blue-1;
   position: relative;
   font-weight: 400;
 }
 
+@font-face{
+font-family: 'adobe-garamond-pro', Times, Georgia, serif;
+font-style: normal;
+font-weight: 400;
+}
+
 /* structure */
 
 header{
-  background-color: $light-gray;
-  height: 400px;
+  background-color: $blue-1;
+  height: 600px;
 }
 
 header section{
@@ -124,13 +136,26 @@ nav{
 
 .intro-text{
 font-size: 24px;
-color: #7E7E7E;
+color: #ffffff;
 line-height: 32px;
-margin: 100px auto 0 auto;
+margin: 200px auto 0 auto;
 float: left;
 position: relative;
 width: 50%;
 }
+
+.intro-text:after{
+content: '\2193';
+position: absolute;
+left: 0;
+bottom: -60px;
+opacity: 0.6;
+ }
+
+ .intro-text a{
+  border-bottom: 1px solid $teal;
+  padding-bottom: 2px;
+ }
 
 .logo{
   float: left;
@@ -148,9 +173,10 @@ width: 50%;
 }
 
 .menu-right li a{
-  color: #979797;
-  border-bottom: 1px solid #F2F2F2;
+  color: #ffffff;
+  border-bottom: 1px solid transparent;
   padding-bottom: 8px;
+  opacity: 0.6;
   transition: all 0.3s ease-in-out;
  -moz-transition: all 0.3s ease-in-out;
  -webkit-transition: all 0.3s ease-in-out;
@@ -158,9 +184,10 @@ width: 50%;
 }
 
 .menu-right li a:hover{
-  color: #4E4E4E;
-  border-bottom: 1px solid #044AD7;
+  color: #ffffff;
+  border-bottom: 1px solid $teal;
   padding-bottom: 2px;
+  opacity: 1;
     transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -webkit-transition: all 0.3s ease-in-out;
@@ -256,12 +283,6 @@ section.wrapper{
   background-size: 100%;
 }
 
-@font-face{
-font-family: "adobe-garamond-pro", Times, Georgia, serif;
-font-style: normal;
-font-weight: 400;
-}
-
 
 .latest{
   width: 100%;
@@ -279,7 +300,7 @@ font-weight: 400;
 .latest li{
   margin: 0 0 50px 0;
   font-size: 1.5em;
-  font-family: 'Merriweather', Georgia, Times, serif;
+  font-family: $font-serif;
   font-size: 2em;
   color: #044AD7;
   font-weight: 400;
@@ -306,10 +327,10 @@ font-weight: 400;
 
 footer{
   font-size: 16px;
-  font-family: "Karla", Helvetica, Arial, sans-serif;
+  font-family: $font-sans;
   line-height: 2em;
   color: #505050;
-  background-color: #1A1A1A;
+  background-color: $dark-gray;
   min-height: 180px;
   width: 100%;
   padding: 60px 0 20px 0;
@@ -403,7 +424,7 @@ section .social ul{
 }
 
 .latlong{
-  font-family: Karla-Regular;
+  font-family: $font-sans;
   font-size: 22px;
   color: #333333;
   clear: both;
