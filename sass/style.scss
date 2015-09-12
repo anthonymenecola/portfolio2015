@@ -1,5 +1,6 @@
 $blue-1:#044AD7;
 $light-gray:#f2f2f2;
+$gray: #7E7E7E;
 $dark-gray: #1A1A1A;
 $teal: #50E3C2;
 $font-sans: 'Karla', Helvetica, Arial, sans-serif;
@@ -74,6 +75,7 @@ a{
 
 body{
   font-family: $font-sans;
+  color: $gray;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
@@ -168,7 +170,7 @@ opacity: 0.6;
 .menu-right li{
   font-size: 1em;
   margin-left: 60px;
-  color: #979797;
+  color: #ffffff;
   display: inline;
 }
 
@@ -204,7 +206,7 @@ section.wrapper{
   height: auto;
 }
 
-.select-works{
+.section-title{
   background: transparent;
   width: 48%;
   height: 20em;
@@ -212,7 +214,7 @@ section.wrapper{
   margin: 10px;
 }
 
-.select-works h2::after{
+.section-title h2::after{
   content: '';
   position: absolute;
   left: 0;
@@ -304,25 +306,28 @@ section.wrapper{
   font-size: 2em;
   color: #044AD7;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
-.journal-title{
+.journal-number{
+  font-family: $font-mono;
+  font-size: 14px;
+  color: #7E7E7E;
+}
+
+.select-works{
   background: transparent;
   width: 48%;
-  height: 400px;
+  height: 20em;
   float: left;
   margin: 10px;
 }
 
-.journal-title h2::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -40px;
-  height: 2px;
-  width: 30px;
-  background-color: currentColor;
+.services{
+  width: 25%;
+  float: left;
+  font-family: $font-mono;
+  font-size: 14px;
 }
 
 footer{
