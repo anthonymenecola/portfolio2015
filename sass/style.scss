@@ -201,6 +201,10 @@ main{
   margin: 0 auto;
 }
 
+section{
+  clear: both;
+}
+
 section.wrapper{
   padding: 60px 0;
   height: auto;
@@ -209,7 +213,7 @@ section.wrapper{
 .section-title{
   background: transparent;
   width: 48%;
-  height: 20em;
+  // height: 20em;
   float: left;
   margin: 10px;
 }
@@ -294,11 +298,6 @@ section.wrapper{
   padding: 80px 0;
 }
 
-.journal-wrap{
-  margin: 0 auto;
-  width: 1170px;
-}
-
 .latest li{
   margin: 0 0 50px 0;
   font-size: 1.5em;
@@ -309,10 +308,33 @@ section.wrapper{
   line-height: 1.4em;
 }
 
+.journal-wrap{
+  margin: 0 auto;
+  width: 1170px;
+}
+
 .journal-number{
   font-family: $font-mono;
   font-size: 14px;
   color: #7E7E7E;
+}
+
+.journal-title{
+  background: transparent;
+  width: 48%;
+  height: 20em;
+  float: left;
+  margin: 10px;
+}
+
+.journal-title h2::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  height: 2px;
+  width: 30px;
+  background-color: currentColor;
 }
 
 .select-works{
@@ -328,6 +350,44 @@ section.wrapper{
   float: left;
   font-family: $font-mono;
   font-size: 14px;
+}
+
+.job-entry{
+  width: 50%;
+  float: right;
+  clear: right;
+  margin-bottom: 60px;
+}
+
+.job-length{
+  width: 50%;
+  float: left;
+  font-family: $font-mono;
+  font-size: 14px;
+}
+
+.job-details{
+  width: 50%;
+  float: left;
+  font-family: $font-sans;
+  color: $dark-gray;
+  font-size: 16px;
+}
+
+.job-details li a{
+  color: $gray;
+  transition: color 0.3s ease-in-out;
+ -moz-transition: color 0.3s ease-in-out;
+ -webkit-transition: color 0.3s ease-in-out;
+ -o-transition: color 0.3s ease-in-out;
+}
+
+.job-details li a:hover{
+  color: $blue-1;
+  transition: color 0.3s ease-in-out;
+ -moz-transition: color 0.3s ease-in-out;
+ -webkit-transition: color 0.3s ease-in-out;
+ -o-transition: color 0.3s ease-in-out;
 }
 
 footer{
