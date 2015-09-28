@@ -21,13 +21,18 @@
 		<header>
 			<section>
 				<nav class="nav">
-					<a href="#"><div class="logo"></div></a>
+					<a href="../index.html"><div class="logo"></div></a>
 					<div class="menu-right">
 						<ul>
 							<li><a href="../index.html">Work</a></li>
 							<li>Profile</li>
 							<li><a href="../journal/index.html">Journal</a></li>
 						</ul>
+					</div>
+					<div class="mobile-menu">
+						<button class="c-hamburger c-hamburger--htx">
+							<span>toggle menu</span>
+						</button>
 					</div>	
 				</nav>
 				<span class="intro-text">I currently design beautiful &amp; usable digital experiences at <a href="http://pivotal.io/labs" target="_blank">Pivotal Labs</a></span>
@@ -35,7 +40,7 @@
 		</header>
 
 		<main>
-			<section class="wrapper">
+			<section class="wrapper service">
 				<div class="section-title">
 					<h2>Services</h2>
 				</div>
@@ -103,7 +108,7 @@
 				</article>
 			</section>
 
-			<section class="wrapper">
+			<section class="wrapper clients">
 				<div class="section-title">
 					<h2>Clients</h2>
 				</div>
@@ -155,7 +160,30 @@
 				</div>
 				<span class="latlong">43.7000&deg; N, 79.4000&deg;</span>
 			</section>
-		</footer>	
+		</footer>
+
+
+<script>
+  (function() {
+
+    "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+
+  })();
+</script>	
 
 	</body>
 </html>

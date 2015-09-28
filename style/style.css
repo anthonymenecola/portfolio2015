@@ -51,6 +51,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+button {
+  background-color: inherit; }
+
 /* Type Styles */
 a {
   text-decoration: none;
@@ -79,7 +82,8 @@ h2 {
 /* structure */
 header {
   background-color: #044AD7;
-  height: 600px; }
+  height: 600px;
+  padding: 0 40px; }
 
 header section {
   margin: 0 auto;
@@ -161,6 +165,10 @@ nav {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out; }
 
+.mobile-menu {
+  display: none;
+  float: right; }
+
 main {
   max-width: 1170px;
   margin: 0 auto; }
@@ -171,6 +179,9 @@ section {
 section.wrapper {
   padding: 60px 0;
   height: auto; }
+
+.clients {
+  margin-bottom: 200px; }
 
 .section-title {
   background: transparent;
@@ -196,7 +207,7 @@ section.wrapper {
   margin: 10px;
   position: relative; }
 
-.project_name {
+.project_thumbnail_name {
   position: absolute;
   top: 0;
   right: 0;
@@ -213,16 +224,43 @@ section.wrapper {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out; }
 
-.project_name:hover {
+.project_thumbnail_name:hover {
   opacity: 1;
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out; }
 
-.project_name:after {
+.project_thumbnail_name:after {
   content: "\2192";
   margin-left: 10px; }
+
+.project_title {
+  font-family: "adobe-garamond-pro", Times, Georgia, serif;
+  font-size: 48px;
+  color: #ffffff;
+  line-height: 32px;
+  margin: 360px auto 0 auto;
+  float: left;
+  position: relative;
+  width: 50%; }
+
+.project-bg {
+  background: url("../img/project-bg.png") center center no-repeat;
+  background-size: cover;
+  background-color: #044AD7; }
+
+.project-wrapper {
+  width: 100%;
+  margin: 60px auto; }
+
+.project-wrapper img {
+  width: 100%;
+  margin: 60px 0; }
+
+.project-wrapper p {
+  width: 60%;
+  margin: 0 auto 20px auto; }
 
 .pur {
   background: white url("https://images.unsplash.com/photo-1429042595042-d9bb87d4ea82?q=80&fm=jpg&s=11a9eaca10009b29aa1e0d1244fc8a88") no-repeat center center;
@@ -249,10 +287,9 @@ section.wrapper {
 
 .latest li {
   margin: 0 0 50px 0;
-  font-size: 1.5em;
-  font-family: "adobe-garamond-pro", Times, Georgia, serif;
-  font-size: 2em;
-  color: #044AD7;
+  font-size: 1.4em;
+  font-family: "Karla", Helvetica, Arial, sans-serif;
+  color: #1A1A1A;
   font-weight: 400;
   line-height: 1.4em; }
 
@@ -287,6 +324,9 @@ section.wrapper {
   height: 20em;
   float: left;
   margin: 10px; }
+
+.service {
+  margin-bottom: 90px; }
 
 .services {
   width: 25%;
@@ -433,8 +473,117 @@ section .social ul {
   color: #ffffff;
   text-shadow: none; }
 
+/* -----------------------------------------------------------------------------
+
+  HAMBURGER ICONS COMPONENT
+  
+----------------------------------------------------------------------------- */
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `c-hamburger` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+.c-hamburger {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer; }
+
+.c-hamburger:focus {
+  outline: none; }
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background: white; }
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  content: ""; }
+
+.c-hamburger span::before {
+  top: -10px; }
+
+.c-hamburger span::after {
+  bottom: -10px; }
+
+/**
+ * Style 2
+ * 
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+.c-hamburger--htx span {
+  -webkit-transition: background 0s 0.3s;
+  transition: background 0s 0.3s; }
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition-delay: 0.3s, 0s; }
+
+.c-hamburger--htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, transform; }
+
+.c-hamburger--htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform; }
+
+.c-hamburger--htx.is-active span {
+  background: none; }
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s; }
+
 /* Mobile Styling */
 @media (max-width: 800px) {
+  .menu-right {
+    display: none; }
+
+  .mobile-menu {
+    display: inline;
+    float: right; }
+
   section .col-1 {
     float: left;
     width: 80%; }

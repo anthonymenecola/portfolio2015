@@ -21,13 +21,18 @@
 		<header>
 			<section>
 				<nav class="nav">
-					<a href="#"><div class="logo"></div></a>
+					<a href="../index.html"><div class="logo"></div></a>
 					<div class="menu-right">
 						<ul>
 							<li><a href="../index.html">Work</a></li>
 							<li><a href="../profile/index.html">Profile</a></li>
 							<li>Journal</li>
 						</ul>
+					</div>
+					<div class="mobile-menu">
+						<button class="c-hamburger c-hamburger--htx">
+							<span>toggle menu</span>
+						</button>
 					</div>	
 				</nav>
 				<span class="intro-text">I currently design beautiful &amp; usable digital experiences at <a href="#">Pivotal Labs</a> in Toronto</span>
@@ -71,7 +76,29 @@
 				</div>
 				<span class="latlong">43.7000&deg; N, 79.4000&deg;</span>
 			</section>
-		</footer>	
+		</footer>
+
+<script>
+  (function() {
+
+    "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+
+  })();
+</script>			
 
 	</body>
 </html>
