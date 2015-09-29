@@ -114,6 +114,11 @@ header section{
   max-width: 1170px;
 }
 
+.profile-bg{
+  background: url("../img/profile-bg.jpg") top right no-repeat;
+  background-color: #000000;
+}
+
 nav{
   max-width: 1170px;
   margin: 0 auto;
@@ -313,6 +318,18 @@ section.wrapper{
 .project-wrapper p{
   width: 60%;
   margin: 0 auto 20px auto;
+}
+
+.project-wrapper blockquote{
+  font-family: $font-serif;
+  font-size: 1.6em;
+  font-style: italic;
+  line-height: 1.3em;
+  border-left: 2px solid $blue-1;
+  padding: 0px 0px 8px 40px;
+  margin: 40px auto 20px auto;
+  color: $blue-1;
+  width: 80%;
 }
 
 .pur{
@@ -719,6 +736,10 @@ section .social ul{
   float: left;
 }
 
+.intro-text{
+width: 80%;
+}
+
 .social li{
   padding-right: 18px;
   display: inline;
@@ -728,6 +749,12 @@ section .social ul{
    -webkit-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
 }
+
+.project-wrapper p{
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
 }
 
 

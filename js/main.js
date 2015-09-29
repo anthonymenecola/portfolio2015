@@ -1,3 +1,3 @@
-$('.mobile-menu').on('click', function(){
-	alert("YAY");
+$('span.test').on('click', function(){
+	console.log("YAY");
 });

@@ -89,6 +89,10 @@ header section {
   margin: 0 auto;
   max-width: 1170px; }
 
+.profile-bg {
+  background: url("../img/profile-bg.jpg") top right no-repeat;
+  background-color: #000000; }
+
 nav {
   max-width: 1170px;
   margin: 0 auto;
@@ -261,6 +265,17 @@ section.wrapper {
 .project-wrapper p {
   width: 60%;
   margin: 0 auto 20px auto; }
+
+.project-wrapper blockquote {
+  font-family: "adobe-garamond-pro", Times, Georgia, serif;
+  font-size: 1.6em;
+  font-style: italic;
+  line-height: 1.3em;
+  border-left: 2px solid #044AD7;
+  padding: 0px 0px 8px 40px;
+  margin: 40px auto 20px auto;
+  color: #044AD7;
+  width: 80%; }
 
 .pur {
   background: white url("https://images.unsplash.com/photo-1429042595042-d9bb87d4ea82?q=80&fm=jpg&s=11a9eaca10009b29aa1e0d1244fc8a88") no-repeat center center;
@@ -603,6 +618,9 @@ section .social ul {
   section .social ul {
     float: left; }
 
+  .intro-text {
+    width: 80%; }
+
   .social li {
     padding-right: 18px;
     display: inline;
@@ -610,6 +628,10 @@ section .social ul {
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out; } }
+    -o-transition: all 0.3s ease-in-out; }
+
+  .project-wrapper p {
+    width: 80%;
+    margin: 0 auto 20px auto; } }
 
 /*# sourceMappingURL=style.css.map */
