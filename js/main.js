@@ -1,3 +1,3 @@
-$('span.test').on('click', function(){
+$('li.Colophon').on('click', function(){
 	console.log("YAY");
 });

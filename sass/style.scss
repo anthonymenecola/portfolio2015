@@ -288,7 +288,7 @@ section.wrapper{
   margin-left: 10px;
 }
 
-.project_title{
+.page_title{
   font-family: $font-serif;
   font-size: 48px;
   color: #ffffff;
@@ -370,8 +370,17 @@ section.wrapper{
   line-height: 1.4em;
 }
 
+.journal-bg{
+  background: url(../img/journal-bg.jpg) center center no-repeat;
+}
+
 .journal-wrap{
   margin: 0 auto;
+  width: 1170px;
+}
+
+.journal-wrapper{
+  margin: 40px auto;
   width: 1170px;
 }
 
@@ -397,6 +406,30 @@ section.wrapper{
   height: 2px;
   width: 30px;
   background-color: currentColor;
+}
+
+.journal-entry{
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.journal-entry a{
+  color: $blue-1;
+}
+
+.journal-entry h2{
+  font-size: 3em;
+  margin: 20px 0px 60px 0px;
+}
+
+.journal-entry p{
+  width: 60%;
+  margin: 40px auto 20px auto;
+}
+
+.journal-entry span{
+  font-family: $font-mono;
+  font-size: 0.875em;
 }
 
 .select-works{
@@ -751,6 +784,11 @@ width: 80%;
 }
 
 .project-wrapper p{
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+.journal-entry p{
   width: 80%;
   margin: 0 auto 20px auto;
 }
