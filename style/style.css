@@ -306,7 +306,18 @@ section.wrapper {
   font-family: "Karla", Helvetica, Arial, sans-serif;
   color: #1A1A1A;
   font-weight: 400;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out; }
+
+.latest li:hover {
+  color: #044AD7;
+  transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out; }
 
 .journal-bg {
   background: url(../img/journal-bg.jpg) center center no-repeat; }
@@ -345,7 +356,18 @@ section.wrapper {
   position: relative; }
 
 .journal-entry a {
-  color: #044AD7; }
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out; }
+
+.journal-entry a:hover {
+  color: #044AD7;
+  transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out; }
 
 .journal-entry h2 {
   font-size: 3em;
